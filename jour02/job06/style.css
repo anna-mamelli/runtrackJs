@@ -1,0 +1,36 @@
+/* Par défaut : aucun style particulier (le sujet dit "pas de contenu") */
+body {
+    margin: 0;
+    min-height: 100vh;
+}
+
+/* Style activé quand le code konami est réussi - couleurs La Plateforme_ */
+body.konami {
+    background-color: #0a0a0a;
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+body.konami::before {
+    content: "La Plateforme_";
+    font-size: 5rem;
+    font-weight: bold;
+    color: #1300e6;
+    text-shadow: 0 0 20px #1300e6, 0 0 40px #1300e6;
+    animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.05);
+        opacity: 0.8;
+    }
+}
