@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+#plateau {
+    display: grid;
+    grid-template-columns: repeat(3, 150px);
+    grid-template-rows: repeat(3, 150px);
+    gap: 2px;
+    width: 454px;
+    background: #333;
+    padding: 2px;
+}
+
+.case {
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+    background-size: cover;
+    background-position: center;
+}
+
+.case.vide {
+    background: #fff;
+    cursor: default;
+}
+
+#message {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: green;
+}
+
+#recommencer {
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+}
