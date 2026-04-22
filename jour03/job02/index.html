@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Jour 03 - Job 02</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <button id="melanger">Mélanger</button>
+
+    <!-- Zone d'assemblage (cible) : l'utilisateur glisse ici les morceaux -->
+    <div id="cible"></div>
+
+    <!-- Zone source : les 6 morceaux mélangés -->
+    <div id="source">
+        <img src="arc1.png" data-pos="1" class="piece" draggable="true">
+        <img src="arc2.png" data-pos="2" class="piece" draggable="true">
+        <img src="arc3.png" data-pos="3" class="piece" draggable="true">
+        <img src="arc4.png" data-pos="4" class="piece" draggable="true">
+        <img src="arc5.png" data-pos="5" class="piece" draggable="true">
+        <img src="arc6.png" data-pos="6" class="piece" draggable="true">
+    </div>
+
+    <p id="message"></p>
+</body>
+</html>

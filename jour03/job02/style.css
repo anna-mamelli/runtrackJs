@@ -1,0 +1,28 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+#cible, #source {
+    border: 1px solid #ccc;
+    min-height: 220px;
+    padding: 10px;
+    margin: 20px 0;
+    display: flex;
+    align-items: flex-end;
+}
+
+.piece {
+    height: 200px;
+    cursor: grab;
+    margin: 0;
+}
+
+.piece:active {
+    cursor: grabbing;
+}
+
+#message {
+    font-size: 1.5em;
+    font-weight: bold;
+}
