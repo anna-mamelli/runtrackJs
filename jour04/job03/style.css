@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+#formulaire {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 15px;
+    background: #f5f5f5;
+    border-radius: 5px;
+}
+
+#formulaire label {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.9em;
+}
+
+#formulaire input[type="text"], #formulaire select {
+    padding: 5px;
+    margin-top: 3px;
+}
+
+#filtrer {
+    padding: 8px 16px;
+    background: #e6007e;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    align-self: flex-end;
+}
+
+#filtrer:hover {
+    background: #b50062;
+}
+
+#resultats {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 10px;
+}
+
+.pokemon {
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    background: white;
+}
+
+.pokemon h3 {
+    margin: 0 0 8px 0;
+    color: #333;
+}
+
+.pokemon .types {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+.pokemon .type {
+    padding: 2px 8px;
+    border-radius: 3px;
+    font-size: 0.8em;
+    background: #eee;
+}
