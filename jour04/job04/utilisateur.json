@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "nom": "Mamelli",
+        "prenom": "Anna",
+        "email": "anna.mamelli@laplateforme.io"
+    },
+    {
+        "id": 2,
+        "nom": "Dupont",
+        "prenom": "Jean",
+        "email": "jean.dupont@laplateforme.io"
+    },
+    {
+        "id": 3,
+        "nom": "Martin",
+        "prenom": "Sophie",
+        "email": "sophie.martin@laplateforme.io"
+    },
+    {
+        "id": 4,
+        "nom": "Bernard",
+        "prenom": "Luc",
+        "email": "luc.bernard@laplateforme.io"
+    },
+    {
+        "id": 5,
+        "nom": "Petit",
+        "prenom": "Marie",
+        "email": "marie.petit@laplateforme.io"
+    }
+]
