@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Jour 05 - Inscription</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Jour 05</h1>
+        <nav>
+            <a href="inscription.html" class="active">Inscription</a>
+            <a href="connexion.html">Connexion</a>
+        </nav>
+    </header>
+
+    <!-- Zone qui affiche le récap des erreurs en haut -->
+    <div id="recap-erreurs"></div>
+
+    <main>
+        <form id="form-inscription" novalidate>
+            <div class="ligne">
+                <div class="champ">
+                    <label for="prenom">Prénom</label>
+                    <input type="text" id="prenom" name="prenom">
+                    <small class="erreur" data-pour="prenom"></small>
+                </div>
+                <div class="champ">
+                    <label for="nom">Nom</label>
+                    <input type="text" id="nom" name="nom">
+                    <small class="erreur" data-pour="nom"></small>
+                </div>
+            </div>
+
+            <div class="champ">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email">
+                <small class="erreur" data-pour="email"></small>
+            </div>
+
+            <div class="ligne">
+                <div class="champ">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password">
+                    <small class="erreur" data-pour="password"></small>
+                </div>
+                <div class="champ">
+                    <label for="password-confirm">Password Confirmation</label>
+                    <input type="password" id="password-confirm" name="password-confirm">
+                    <small class="erreur" data-pour="password-confirm"></small>
+                </div>
+            </div>
+
+            <div class="ligne">
+                <div class="champ">
+                    <label for="adresse">Adresse</label>
+                    <input type="text" id="adresse" name="adresse">
+                    <small class="erreur" data-pour="adresse"></small>
+                </div>
+                <div class="champ">
+                    <label for="code-postal">Code postal</label>
+                    <input type="text" id="code-postal" name="code-postal" maxlength="5">
+                    <small class="erreur" data-pour="code-postal"></small>
+                </div>
+            </div>
+
+            <div class="actions">
+                <button type="submit" id="btn-inscription">S'inscrire</button>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
